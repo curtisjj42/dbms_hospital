@@ -1,0 +1,6 @@
+.idea/
+venv/
+.env
+app.py
+__pycache__
+*_statements.txt

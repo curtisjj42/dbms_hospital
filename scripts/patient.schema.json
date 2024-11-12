@@ -1,0 +1,157 @@
+{
+  "num_rows": 1000,
+  "file_format": "json",
+  "name": "patient",
+  "array": true,
+  "columns": [
+    {
+      "name": "first_name",
+      "null_percentage": 0,
+      "type": "First Name",
+      "formula": null
+    },
+    {
+      "name": "last_name",
+      "null_percentage": 0,
+      "type": "Last Name",
+      "formula": null
+    },
+    {
+      "name": "email",
+      "null_percentage": 10,
+      "type": "Email Address",
+      "formula": null
+    },
+    {
+      "name": "sex",
+      "null_percentage": 0,
+      "type": "Gender (Binary)",
+      "formula": null
+    },
+    {
+      "name": "gender",
+      "null_percentage": 0,
+      "type": "Custom List",
+      "values": [
+        "cisgender",
+        "non-binary",
+        "prefer not to say",
+        "genderqueer"
+      ],
+      "selectionStyle": "weighted",
+      "distribution": [
+        {
+          "frequencies": {
+            "cisgender": "5",
+            "non-binary": "1",
+            "prefer not to say": "1",
+            "genderqueer": "1"
+          }
+        }
+      ],
+      "formula": null
+    },
+    {
+      "name": "DOB",
+      "null_percentage": 0,
+      "type": "Datetime",
+      "min": "1/1/1950",
+      "max": "12/31/2022",
+      "format": "%Y-%m-%d %H:%M:%S",
+      "formula": null
+    },
+    {
+      "name": "phone_number",
+      "null_percentage": 30,
+      "type": "Phone",
+      "format": "###-###-####",
+      "formula": null
+    },
+    {
+      "name": "address",
+      "null_percentage": 5,
+      "type": "Street Address",
+      "formula": null
+    },
+    {
+      "name": "sexual_orientation",
+      "null_percentage": 0,
+      "type": "Custom List",
+      "values": [
+        "heterosexual",
+        "homosexual",
+        "bisexual",
+        "asexual",
+        "pansexual",
+        "queer",
+        "questioning",
+        "polysexual",
+        "demisexual",
+        "graysexual"
+      ],
+      "selectionStyle": "weighted",
+      "distribution": [
+        {
+          "frequencies": {
+            "heterosexual": "5",
+            "homosexual": "2",
+            "bisexual": "2",
+            "pansexual": "1",
+            "asexual": "1",
+            "queer": "1",
+            "questioning": "1",
+            "demisexual": "1",
+            "polysexual": "1"
+          }
+        }
+      ],
+      "formula": null
+    },
+    {
+      "name": "is_doctor",
+      "null_percentage": 0,
+      "type": "Boolean",
+      "formula": "if random(0,100) <= 3 then true else false end"
+    },
+    {
+      "name": "department_name",
+      "null_percentage": 0,
+      "type": "Custom List",
+      "values": [
+        "Cardiology",
+        "Dermatology",
+        "Endocrinology",
+        "Gastroenterology",
+        "Hematology",
+        "Neurology",
+        "Oncology",
+        "Orthopedics",
+        "Pediatrics",
+        "Psychiatry",
+        "Radiology",
+        "Urology",
+        "Ophthalmology",
+        "Obstetrics and Gynecology",
+        "Allergy and Immunology",
+        "Anesthesiology",
+        "Family Medicine",
+        "Internal Medicine",
+        "Nephrology",
+        "Pulmonology",
+        "Rheumatology",
+        "Otolaryngology",
+        "Physical Therapy",
+        "Sports Medicine",
+        "Dentistry",
+        "Podiatry",
+        "Plastic Surgery",
+        "General Surgery",
+        "Emergency Medicine",
+        "Geriatrics"
+      ],
+      "selectionStyle": "weighted",
+      "distribution": null,
+      "formula": null
+    }
+  ]
+}
